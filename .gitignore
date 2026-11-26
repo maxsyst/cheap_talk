@@ -1,0 +1,44 @@
+# ─────────────────────────────────────────────
+# .gitignore — Cheap Talk 项目
+# 忽略中间过程产生的文件和目录
+# ─────────────────────────────────────────────
+
+# ── 编译产物 / 中间文件 ──────────────────────
+build/
+debug/build/
+
+# 根目录下误生成的编译产物
+show_code.exe
+show_code_c.exe
+show_code_asm.exe
+*.obj
+*.o
+*.class
+*.pdb
+
+# ── C# 项目中间文件 ──────────────────────────
+csproj/bin/
+csproj/obj/
+debug/csproj_debug/bin/
+debug/csproj_debug/obj/
+
+# ── C# 离线发布包（体积过大，按需重新生成）─────
+deps/
+
+# ── IDE / 编辑器 ─────────────────────────────
+.vscode/
+.idea/
+*.user
+*.suo
+*.swp
+*~
+
+# ── OS 系统文件 ──────────────────────────────
+Thumbs.db
+Desktop.ini
+.DS_Store
+
+# ── 临时文件 ─────────────────────────────────
+*.tmp
+*.log
+*.bak
